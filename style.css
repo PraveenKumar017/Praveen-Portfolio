@@ -187,7 +187,7 @@ span {
 }
 .services-container .services-box:hover{
     border-color: var(--main-color);
-    transform: scale(1.02);
+    transform: scale(1.1);
 }
 .services-box i {
     font-size: 7rem;
@@ -198,7 +198,7 @@ span {
 }
 .services-box p {
     font-size: 1.6rem;
-    margin: 7rem 0 3rem;
+    margin: 5rem 0 3rem;
 }
 .portfolio {
     background: var(--second-bg-color);
@@ -522,4 +522,10 @@ span {
 .education-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
+}
+.abt{
+    letter-spacing: 0.5px;
+    line-height: 200%;
+    align-items: flex-end;
+    justify-items: center;
 }
