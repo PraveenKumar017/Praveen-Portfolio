@@ -1,0 +1,232 @@
+/* ============================================================
+   Responsive styles (v2)
+   Breakpoints: 320, 375, 390, 430, 768, 1024, 1440, 1920
+   ============================================================ */
+
+/* ---------- 1920px and up ---------- */
+@media (min-width: 1920px) {
+  .container,
+  .nav-inner {
+    width: min(1400px, 88%);
+  }
+}
+
+/* ---------- 1440px and up ---------- */
+@media (min-width: 1440px) {
+  .container,
+  .nav-inner {
+    width: min(1280px, 92%);
+  }
+}
+
+/* ---------- 1100px and below ---------- */
+@media (max-width: 1100px) {
+  /* Project bento: 6-col → 2-col, wide stays full-width */
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-card--wide { grid-column: span 2; }
+  .project-card--half { grid-column: span 1; }
+  .project-card--third { grid-column: span 1; }
+}
+
+/* ---------- 1024px and below ---------- */
+@media (max-width: 1024px) {
+  .education-item {
+    grid-template-columns: 1fr auto;
+    gap: 0.75rem 1.25rem;
+  }
+
+  .education-degree {
+    grid-column: 1;
+  }
+
+  .education-school {
+    grid-column: 1;
+  }
+
+  /* Bento grid: 12-col asymmetric → 2-col until mobile */
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bento-card--frontend,
+  .bento-card--tools {
+    grid-column: span 2;
+  }
+
+  .bento-card--domain,
+  .bento-card--backend {
+    grid-column: span 1;
+  }
+}
+
+/* ---------- 900px and below (tablet) ---------- */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .resume-btn {
+    display: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-visual {
+    max-width: 560px;
+  }
+
+  /* Bento grid collapses to single column */
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-card--frontend,
+  .bento-card--domain,
+  .bento-card--backend,
+  .bento-card--tools {
+    grid-column: span 1;
+  }
+}
+
+/* ---------- 768px and below ---------- */
+@media (max-width: 768px) {
+  .section-title {
+    max-width: 14ch;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.5rem;
+  }
+
+  .timeline-card-head {
+    flex-direction: column;
+  }
+
+  .timeline-date {
+    align-self: flex-start;
+  }
+
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ---------- 640px and below (mobile) ---------- */
+@media (max-width: 640px) {
+  /* Project bento → single column */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card--wide,
+  .project-card--half,
+  .project-card--third {
+    grid-column: span 1;
+  }
+
+  .project-card {
+    min-height: 0;
+    padding: 1.5rem;
+  }
+
+  .project-hover {
+    transform: none;
+    margin: 1.2rem -1.5rem -1.5rem;
+    padding: 1rem;
+  }
+
+  .education-item {
+    grid-template-columns: 1fr;
+  }
+
+  .building-strip {
+    padding: 1.25rem 1.4rem;
+  }
+
+  .hero-title {
+    letter-spacing: -0.03em;
+  }
+}
+
+/* ---------- 430px and below (small mobile) ---------- */
+@media (max-width: 430px) {
+  .hero-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-tags {
+    margin-bottom: 2rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .badge-live::before {
+    display: none;
+  }
+
+  .nav-inner {
+    gap: 0.5rem;
+  }
+}
+
+/* ---------- 320px edge case ---------- */
+@media (max-width: 320px) {
+  .hero-tags .tag {
+    font-size: 0.68rem;
+  }
+
+  .contact-links {
+    word-break: break-word;
+  }
+}
+
+/* ---------- Reduced-motion visual fallback for mobile hover ---------- */
+@media (hover: none) {
+  .cursor-glow {
+    display: none;
+  }
+
+  .spotlight::before {
+    display: none;
+  }
+
+  /* Reveal project tags/links on touch devices */
+  .project-hover {
+    transform: none;
+    margin: 1.2rem -1.8rem -1.8rem;
+    padding: 1rem 1.2rem;
+  }
+
+  .project-card {
+    min-height: 0;
+  }
+}

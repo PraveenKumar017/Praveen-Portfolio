@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Praveen Kumar S — Senior Software Engineer</title>
+  <meta name="description" content="Praveen Kumar S — Senior Software Engineer. Angular specialist with full-stack exposure (Go, Cassandra), 2.5+ years shipping enterprise products. Explore projects, experience and design work." />
+  <meta name="author" content="Praveen Kumar S" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Praveen Kumar S — Senior Software Engineer" />
+  <meta property="og:description" content="Angular specialist with full-stack exposure (Go, Cassandra) building scalable web experiences." />
+  <meta property="og:url" content="https://praveenkumars.dev/" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230B0E11'/><text x='50' y='68' font-size='52' font-family='Arial, sans-serif' font-weight='700' text-anchor='middle' fill='%235B8CFF'>PK</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Signature interaction: cursor-follow spotlight across cards (site-wide) -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a href="#hero" class="brand" aria-label="Praveen Kumar S — home">
+        <span class="brand-mark">PK</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Switch to light theme" aria-pressed="false">
+          <span class="theme-toggle-track" aria-hidden="true">
+            <i class="fa-solid fa-moon theme-icon-moon"></i>
+            <i class="fa-solid fa-sun theme-icon-sun"></i>
+          </span>
+        </button>
+        <a class="btn btn-primary btn-sm resume-btn" href="assets/Praveen_Kumar_Resume.pdf" download>
+          Resume <i class="fa-solid fa-download" aria-hidden="true"></i>
+        </a>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile glass overlay menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu-links" aria-label="Mobile">
+      <a href="#about" class="mobile-link">About <span class="mobile-link-index mono">01</span></a>
+      <a href="#experience" class="mobile-link">Experience <span class="mobile-link-index mono">02</span></a>
+      <a href="#projects" class="mobile-link">Projects <span class="mobile-link-index mono">03</span></a>
+      <a href="#contact" class="mobile-link">Contact <span class="mobile-link-index mono">04</span></a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="assets/Praveen_Kumar_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+      <div class="mobile-socials">
+        <a href="https://www.linkedin.com/in/praveenkumar-s" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:hello@praveenkumar.dev" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-mesh"></div>
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="hero-content container">
+        <p class="hero-eyebrow mono reveal">&lt;Hello, world /&gt;</p>
+        <h1 class="hero-title reveal">
+          Praveen Kumar S<br />
+          <span class="hero-title-accent">Senior Software Engineer</span><br />
+          building scalable web experiences
+        </h1>
+        <p class="hero-sub reveal">
+          Angular specialist with full-stack exposure — Go, Cassandra, REST APIs.
+          2.5+ years shipping enterprise products.
+        </p>
+
+        <div class="hero-tags reveal">
+          <span class="tag">Angular</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Go</span>
+          <span class="tag">Cassandra</span>
+          <span class="tag">REST APIs</span>
+        </div>
+
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary magnetic">View Projects <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+          <a href="#contact" class="btn btn-outline">Get in Touch <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero-scroll" aria-label="Scroll to about section">
+        <span class="hero-scroll-dot"></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="container">
+        <p class="section-label mono reveal"><span class="section-num">01</span> / About</p>
+        <h2 class="section-title reveal">Engineered for clean code, built for real products</h2>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I'm a frontend specialist with backend exposure, focused on building
+              interfaces that feel fast, behave predictably, and hold up under real
+              enterprise load. My work sits at the intersection of Angular, Go, and
+              databases like Cassandra — shipping modules end-to-end rather than
+              passing code over the wall.
+            </p>
+            <p>
+              I care about clean architecture, measurable performance, and the kind
+              of cross-team collaboration that turns an AIOps platform into something
+              operators actually enjoy using.
+            </p>
+            <p class="about-current mono">
+              <span class="dot-pulse" aria-hidden="true"></span>
+              Currently building endpoint security &amp; RMM tooling at Algomox
+            </p>
+          </div>
+
+          <div class="about-visual reveal">
+            <div class="terminal">
+              <div class="terminal-bar">
+                <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+                <span class="terminal-title mono">praveen@portfolio: ~</span>
+              </div>
+              <pre class="terminal-body mono"><code><span class="terminal-comment">// whoami</span>
+<span class="terminal-key">const</span> developer = {
+  name: <span class="terminal-str">"Praveen Kumar S"</span>,
+  role: <span class="terminal-str">"Senior Software Engineer"</span>,
+  stack: [<span class="terminal-str">"Angular"</span>, <span class="terminal-str">"TypeScript"</span>, <span class="terminal-str">"Go"</span>, <span class="terminal-str">"Cassandra"</span>],
+  focus: [<span class="terminal-str">"Clean code"</span>, <span class="terminal-str">"Performance"</span>, <span class="terminal-str">"UX"</span>],
+  shipped: <span class="terminal-str">"2.5+ years"</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <p class="section-label mono reveal"><span class="section-num">02</span> / Skills</p>
+        <h2 class="section-title reveal">A stack built for shipping</h2>
+
+        <div class="bento-grid">
+          <div class="bento-card bento-card--frontend spotlight reveal">
+            <div class="bento-head">
+              <span class="bento-icon"><i class="fa-solid fa-laptop-code"></i></span>
+              <h3>Frontend &amp; Web</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Angular</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">Responsive UI Design</span>
+              <span class="tag">CMS</span>
+              <span class="tag">SEO basics</span>
+            </div>
+          </div>
+
+          <div class="bento-card bento-card--domain spotlight reveal">
+            <div class="bento-head">
+              <span class="bento-icon"><i class="fa-solid fa-shield-halved"></i></span>
+              <h3>Domain Knowledge</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag">ITSM</span>
+              <span class="tag">ITAM</span>
+              <span class="tag">SecOps</span>
+              <span class="tag">RMM</span>
+              <span class="tag">EDR</span>
+            </div>
+          </div>
+
+          <div class="bento-card bento-card--backend spotlight reveal">
+            <div class="bento-head">
+              <span class="bento-icon"><i class="fa-solid fa-database"></i></span>
+              <h3>Backend &amp; Databases</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Golang</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Cassandra</span>
+              <span class="tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="bento-card bento-card--tools spotlight reveal">
+            <div class="bento-head">
+              <span class="bento-icon"><i class="fa-solid fa-toolbox"></i></span>
+              <h3>Tools &amp; Practices</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag">AIOps</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <p class="section-label mono reveal"><span class="section-num">03</span> / Experience</p>
+        <h2 class="section-title reveal">Where the work happens</h2>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline-track" aria-hidden="true"></div>
+          <div class="timeline-progress" aria-hidden="true"></div>
+
+          <div class="timeline-node reveal">
+            <div class="timeline-dot"></div>
+            <article class="timeline-card glass">
+              <div class="timeline-card-head">
+                <div class="timeline-org-badge mono">A</div>
+                <div class="timeline-meta">
+                  <h3>Senior Software Engineer</h3>
+                  <p class="mono">Algomox Private Limited</p>
+                </div>
+                <span class="timeline-date mono">Nov 2025 – Present</span>
+              </div>
+              <ul class="timeline-list">
+                <li>EDR/DLP endpoint security contributions</li>
+                <li>OS Image Management UI — Angular + Bootstrap, WebSocket integration, Golden Image / PXE workflows</li>
+                <li>Remote Monitoring &amp; Management module — secure remote access, session tracking</li>
+                <li>Ongoing feature development and bug resolution across UI and server-side</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="timeline-node reveal">
+            <div class="timeline-dot"></div>
+            <article class="timeline-card glass">
+              <div class="timeline-card-head">
+                <div class="timeline-org-badge mono">A</div>
+                <div class="timeline-meta">
+                  <h3>Software Engineer</h3>
+                  <p class="mono">Algomox Private Limited</p>
+                </div>
+                <span class="timeline-date mono">Dec 2023 – Nov 2025</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Asset and Compliance Management module — full asset lifecycle, dashboards, policy enforcement</li>
+                <li>Interactive UI components for an enterprise AIOps application</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <p class="section-label mono reveal"><span class="section-num">04</span> / Projects</p>
+        <h2 class="section-title reveal">Shipped work, live products &amp; design prototypes</h2>
+
+        <!-- Live websites -->
+        <div class="project-group">
+          <h3 class="project-group-title reveal">
+            <span class="project-badge group-badge badge-live">Live</span>
+            Live Websites
+            <span class="project-group-count mono">04</span>
+          </h3>
+          <div class="project-grid">
+            <a class="project-card project-card--wide spotlight reveal" href="https://goldenmercuryscripts.com/" target="_blank" rel="noopener">
+              <div class="project-meta">
+                <span class="project-badge badge-live">Live</span>
+                <span class="project-type mono">Freelance · HTML/CSS/JS</span>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+              <h4>GoldenMercury Scripts</h4>
+              <p>Freelance business site — service showcase, achievements section, and lead-generation forms.</p>
+              <div class="project-hover">
+                <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+                <span class="project-link">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </a>
+
+            <a class="project-card project-card--half spotlight reveal" href="https://huwithin.netlify.app/" target="_blank" rel="noopener">
+              <div class="project-meta">
+                <span class="project-badge badge-live">Live</span>
+                <span class="project-type mono">Freelance</span>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+              <h4>Huwithin</h4>
+              <p>Interactive web experience built for a freelance client — clean, responsive, conversion-focused.</p>
+              <div class="project-hover">
+                <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+                <span class="project-link">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </a>
+
+            <a class="project-card project-card--third spotlight reveal" href="https://www.sivakasi666crackers.com/about" target="_blank" rel="noopener">
+              <div class="project-meta">
+                <span class="project-badge badge-live">Live</span>
+                <span class="project-type mono">Freelance · E-commerce</span>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+              <h4>Sivakasi666 Crackers</h4>
+              <p>Full freelance e-commerce build — product catalog and WhatsApp-integrated ordering flow.</p>
+              <div class="project-hover">
+                <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+                <span class="project-link">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </a>
+
+            <a class="project-card project-card--third spotlight reveal" href="#" aria-disabled="true">
+              <div class="project-meta">
+                <span class="project-badge">Coming soon</span>
+                <span class="project-type mono">Freelance · E-commerce</span>
+              </div>
+              <h4>Twins Nanban Crackers</h4>
+              <p>E-commerce / catalog site for a fireworks retail business.</p>
+              <div class="project-hover">
+                <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+                <span class="project-link project-link-soon">Link coming soon</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Design / prototypes -->
+        <div class="project-group">
+          <h3 class="project-group-title reveal">
+            <span class="project-badge group-badge badge-proto">Prototype</span>
+            Design / Case Studies
+            <span class="project-group-count mono">03</span>
+          </h3>
+          <div class="project-grid">
+            <a class="project-card project-card--proto project-card--half spotlight reveal" href="https://www.figma.com/proto/tsKlnYk0fjiqR9628yRckg/Food-order" target="_blank" rel="noopener">
+              <div class="project-meta">
+                <span class="project-badge badge-proto">Prototype</span>
+                <span class="project-type mono">UI/UX</span>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+              <h4>Food Ordering App</h4>
+              <p>End-to-end UI/UX prototype for a food ordering experience — flow, states and micro-interactions.</p>
+              <div class="project-hover">
+                <div class="tag-list"><span class="tag">Figma</span><span class="tag">UI/UX</span></div>
+                <span class="project-link">View prototype <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </a>
+
+            <a class="project-card project-card--proto project-card--half spotlight reveal" href="https://www.figma.com/proto/eQJykQMUjVZNOhun51JvUA/Health-Monitor" target="_blank" rel="noopener">
+              <div class="project-meta">
+                <span class="project-badge badge-proto">Prototype</span>
+                <span class="project-type mono">UI/UX</span>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+              <h4>Health Monitoring App</h4>
+              <p>UI/UX design for a health-tracking application — data-dense screens made calm and scannable.</p>
+              <div class="project-hover">
+                <div class="tag-list"><span class="tag">Figma</span><span class="tag">UI/UX</span></div>
+                <span class="project-link">View prototype <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </a>
+
+            <a class="project-card project-card--proto project-card--half spotlight reveal" href="https://www.figma.com/proto/RCzXfu95LuZ8AY0x0z6PSq/Blog-Platform" target="_blank" rel="noopener">
+              <div class="project-meta">
+                <span class="project-badge badge-proto">Prototype</span>
+                <span class="project-type mono">UI/UX</span>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+              <h4>Blogging Platform</h4>
+              <p>Responsive blog platform UI design — reader-first editorial layout across breakpoints.</p>
+              <div class="project-hover">
+                <div class="tag-list"><span class="tag">Figma</span><span class="tag">UI/UX</span></div>
+                <span class="project-link">View prototype <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Other shipped work -->
+        <div class="project-group">
+          <h3 class="project-group-title reveal">
+            <span class="project-badge group-badge badge-other">Shipped</span>
+            Other Shipped Work
+            <span class="project-group-count mono">02</span>
+          </h3>
+          <div class="project-grid">
+            <div class="project-card project-card--plain project-card--third spotlight reveal">
+              <div class="project-meta">
+                <span class="project-type mono">Angular</span>
+              </div>
+              <h4>Paybus Application</h4>
+              <p>Angular frontend for a bus booking / transit application.</p>
+              <div class="project-hover">
+                <div class="tag-list"><span class="tag">Angular</span><span class="tag">TypeScript</span></div>
+              </div>
+            </div>
+
+            <div class="project-card project-card--plain project-card--third spotlight reveal">
+              <div class="project-meta">
+                <span class="project-type mono">Utility</span>
+              </div>
+              <h4>Automatic On-Duty Generation Website</h4>
+              <p>HTML/CSS utility tool — automating on-duty request generation.</p>
+              <div class="project-hover">
+                <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Currently building -->
+        <div class="building-strip glass reveal">
+          <div class="building-strip-head">
+            <span class="building-strip-label mono"><span class="dot-pulse" aria-hidden="true"></span> Currently Building</span>
+          </div>
+          <div class="building-strip-items">
+            <div class="building-item">
+              <span class="building-item-name">Business Portfolio</span>
+              <span class="tag">In progress</span>
+            </div>
+            <div class="building-item">
+              <span class="building-item-name">Boutique Site</span>
+              <span class="tag">In progress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="achievements section" id="achievements">
+      <div class="container">
+        <p class="section-label mono reveal"><span class="section-num">05</span> / Achievements</p>
+        <h2 class="section-title reveal">Recognition along the way</h2>
+
+        <div class="achievement-grid">
+          <div class="achievement-card glass spotlight reveal">
+            <span class="achievement-rank mono">Semi-finalist</span>
+            <h3>The Inventors Challenge 2023 <span class="achievement-org">(AICTE &amp; STMicroelectronics)</span></h3>
+            <p>Presented an AI-assisted Smart Stethoscope prototype at ICETITE 2024.</p>
+          </div>
+
+          <div class="achievement-card glass spotlight reveal">
+            <span class="achievement-rank mono">1st Position</span>
+            <h3>Automatic On-Duty Generation</h3>
+            <p>Won 1st position in the project presentation at Symposium ACME-2K23.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="education section" id="education">
+      <div class="container">
+        <p class="section-label mono reveal"><span class="section-num">06</span> / Education</p>
+        <h2 class="section-title reveal">Where the fundamentals were built</h2>
+
+        <div class="education-list">
+          <div class="education-item glass spotlight reveal">
+            <span class="education-degree">B.E., ECE</span>
+            <span class="education-school">Kongu Engineering College, Perundurai</span>
+            <span class="education-meta mono">2020 – 2024</span>
+            <span class="education-score mono">CGPA 8.38</span>
+          </div>
+          <div class="education-item glass spotlight reveal">
+            <span class="education-degree">HSC</span>
+            <span class="education-school">Kongu Kalvi Nilayam, Erode</span>
+            <span class="education-meta mono">2019 – 2020</span>
+            <span class="education-score mono">83.5%</span>
+          </div>
+          <div class="education-item glass spotlight reveal">
+            <span class="education-degree">SSLC</span>
+            <span class="education-school">Kongu Vidhyalaya Matric School, Erode</span>
+            <span class="education-meta mono">2017 – 2018</span>
+            <span class="education-score mono">91.2%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <p class="section-label mono reveal"><span class="section-num">07</span> / Contact</p>
+        <h2 class="section-title contact-title reveal">Let's build something great together.</h2>
+
+        <div class="contact-links reveal">
+          <a href="mailto:hello@praveenkumar.dev" class="contact-link">hello@praveenkumar.dev</a>
+          <a href="tel:+910000000000" class="contact-link">+91 00000 00000</a>
+          <a href="https://www.linkedin.com/in/praveenkumar-s" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/praveenkumar-s</a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" id="formName" name="name" class="form-input" placeholder=" " required autocomplete="name" />
+              <label for="formName">Name</label>
+            </div>
+            <div class="form-field">
+              <input type="email" id="formEmail" name="email" class="form-input" placeholder=" " required autocomplete="email" />
+              <label for="formEmail">Email</label>
+            </div>
+          </div>
+          <div class="form-field">
+            <textarea id="formMessage" name="message" class="form-input" rows="4" placeholder=" " required></textarea>
+            <label for="formMessage">Your message</label>
+          </div>
+          <button type="submit" class="btn btn-primary magnetic">Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-socials reveal">
+          <a href="https://www.linkedin.com/in/praveenkumar-s" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a>
+          <a href="https://github.com/praveenkumar-s" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+          <a href="mailto:hello@praveenkumar.dev" aria-label="Email"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand"><span class="brand-mark">PK</span></a>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/praveenkumar-s" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/praveenkumar-s" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:hello@praveenkumar.dev" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-note">© <span id="year">2026</span> Praveen Kumar S. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="mai.js" defer></script>
+</body>
+</html>
