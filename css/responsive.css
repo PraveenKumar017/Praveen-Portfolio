@@ -291,6 +291,11 @@
     gap: 0.85rem;
   }
 
+  .skill-chip {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.7rem;
+  }
+
   .education-item {
     padding: 1.35rem 1.4rem;
   }
@@ -510,9 +515,5 @@
 
 /* ---------- Reduced-motion visual fallback for mobile hover ---------- */
 @media (hover: none) {
-  .cursor-glow {
-    display: none;
-  }
-
   /* Reveal project footer is always visible — no override needed */
 }

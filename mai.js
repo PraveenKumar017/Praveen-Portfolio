@@ -269,34 +269,6 @@ var spyActive = null;
       });
   });
 
-  /* ---------- 9. Cursor glow (desktop only) ---------- */
-  var glow = document.querySelector(".cursor-glow");
-
-  if (glow && finePointer && !prefersReducedMotion) {
-    var ticking = false;
-
-    window.addEventListener("mousemove", function (e) {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(function () {
-        glow.style.left = e.clientX + "px";
-        glow.style.top = e.clientY + "px";
-        ticking = false;
-      });
-    });
-
-    setTimeout(function () {
-      glow.classList.add("is-active");
-    }, 60);
-
-    document.addEventListener("mouseleave", function () {
-      glow.classList.remove("is-active");
-    });
-    document.addEventListener("mouseenter", function () {
-      glow.classList.add("is-active");
-    });
-  }
-
   /* ---------- 10. Magnetic buttons (desktop only) ---------- */
   if (finePointer && !prefersReducedMotion) {
     var magnets = document.querySelectorAll(".magnetic");

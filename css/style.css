@@ -199,6 +199,48 @@ h4:hover {
   gap: 0.55rem;
 }
 
+/* Skill chips with official brand logos */
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.skill-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -16px var(--shadow-color);
+}
+
+.skill-logo {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 4px;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.skill-icon {
+  width: 15px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -344,28 +386,6 @@ html[data-theme="light"] .theme-icon-sun { opacity: 1; transform: rotate(0deg) s
 @keyframes pulse-ring {
   0% { transform: scale(0.5); opacity: 1; }
   100% { transform: scale(1.4); opacity: 0; }
-}
-
-/* Cursor glow (desktop only) */
-.cursor-glow {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 480px;
-  height: 480px;
-  pointer-events: none;
-  z-index: 1;
-  background: radial-gradient(circle, var(--spot-glow) 0%, transparent 65%);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .cursor-glow.is-active {
-    opacity: 1;
-  }
 }
 
 /* ---------- 4. Header / Nav ---------- */
@@ -798,18 +818,61 @@ html[data-theme="light"] .hero-blob-2 {
 }
 
 .bento-card {
+  position: relative;
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.9rem;
   overflow: hidden;
-  transition: transform var(--transition-med), border-color var(--transition-med), background var(--transition-med);
+  transition: transform var(--transition-med), border-color var(--transition-med), box-shadow var(--transition-med);
+}
+
+.bento-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 80% at 50% 0%, var(--spot-glow), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-out);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .bento-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent);
-  background: var(--bg-elevated);
+  transform: translateY(-5px);
+  border-color: var(--border-strong);
+  box-shadow: 0 24px 60px -28px var(--shadow-color);
+}
+
+.bento-card:hover::after {
+  opacity: 1;
+}
+
+/* Shared top-sheen on card hover */
+.timeline-card::after,
+.achievement-card::after,
+.education-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 80% at 50% 0%, var(--spot-glow), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-out);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.timeline-card:hover::after,
+.achievement-card:hover::after,
+.education-item:hover::after {
+  opacity: 1;
+}
+
+.timeline-card-head,
+.timeline-list,
+.education-item > span {
+  position: relative;
+  z-index: 3;
 }
 
 .bento-card--frontend { grid-column: span 8; }
@@ -898,18 +961,19 @@ html[data-theme="light"] .hero-blob-2 {
 }
 
 .timeline-card {
+  position: relative;
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.9rem;
   overflow: hidden;
-  transition: border-color var(--transition-med), transform var(--transition-med), background var(--transition-med);
+  transition: border-color var(--transition-med), transform var(--transition-med), box-shadow var(--transition-med);
 }
 
 .timeline-card:hover {
-  border-color: var(--accent);
+  border-color: var(--border-strong);
   transform: translateY(-3px);
-  background: var(--bg-elevated);
+  box-shadow: 0 24px 60px -28px var(--shadow-color);
 }
 
 .timeline-card-head {
@@ -1072,9 +1136,8 @@ html[data-theme="light"] .badge-live {
 
 .project-card:hover {
   transform: translateY(-6px);
-  border-color: var(--accent);
+  border-color: var(--border-strong);
   box-shadow: 0 24px 60px -28px var(--shadow-color);
-  background: var(--bg-elevated);
 }
 
 /* Soft sheen from the top edge on hover */
@@ -1104,26 +1167,6 @@ html[data-theme="light"] .badge-live {
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1.3rem;
-}
-
-.project-arrow {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
-}
-
-.project-card:hover .project-arrow {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-  transform: rotate(45deg);
 }
 
 .project-card h4 {
@@ -1256,18 +1299,19 @@ html[data-theme="light"] .badge-live {
 }
 
 .achievement-card {
+  position: relative;
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.9rem;
   overflow: hidden;
-  transition: transform var(--transition-med), border-color var(--transition-med), background var(--transition-med);
+  transition: transform var(--transition-med), border-color var(--transition-med), box-shadow var(--transition-med);
 }
 
 .achievement-card:hover {
   transform: translateY(-4px);
-  border-color: var(--accent);
-  background: var(--bg-elevated);
+  border-color: var(--border-strong);
+  box-shadow: 0 24px 60px -28px var(--shadow-color);
 }
 
 .achievement-rank {
@@ -1310,6 +1354,7 @@ html[data-theme="light"] .badge-live {
 }
 
 .education-item {
+  position: relative;
   display: grid;
   grid-template-columns: 220px 1fr auto auto;
   align-items: center;
@@ -1319,13 +1364,13 @@ html[data-theme="light"] .badge-live {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: border-color var(--transition-med), transform var(--transition-med), background var(--transition-med);
+  transition: border-color var(--transition-med), transform var(--transition-med), box-shadow var(--transition-med);
 }
 
 .education-item:hover {
-  border-color: var(--accent);
-  transform: translateX(5px);
-  background: var(--bg-elevated);
+  border-color: var(--border-strong);
+  transform: translateY(-3px);
+  box-shadow: 0 24px 60px -28px var(--shadow-color);
 }
 
 .education-degree {
@@ -1391,8 +1436,7 @@ html[data-theme="light"] .badge-live {
 }
 
 .contact-channel:hover {
-  border-color: var(--accent);
-  background: var(--bg-elevated);
+  border-color: var(--border-strong);
   transform: translateX(4px);
 }
 
@@ -1634,9 +1678,5 @@ html[data-theme="light"] .form-status.error {
   .reveal {
     opacity: 1;
     transform: none;
-  }
-
-  .cursor-glow {
-    display: none;
   }
 }
