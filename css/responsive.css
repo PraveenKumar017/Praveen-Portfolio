@@ -82,8 +82,8 @@
   }
 
   .about-visual {
-    max-width: 560px;
-    margin-inline: auto;
+    max-width: 100%;
+    margin-inline: 0;
   }
 
   /* Bento grid collapses to single column */
@@ -103,6 +103,14 @@
 @media (max-width: 768px) {
   .container {
     width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-inner {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .section {
@@ -111,6 +119,10 @@
 
   .hero {
     padding: calc(var(--header-h) + 1.5rem) 0 3.5rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
   }
 
   .hero-title {
@@ -123,7 +135,7 @@
   }
 
   .section-title {
-    max-width: 14ch;
+    max-width: 100%;
     font-size: clamp(1.6rem, 5vw, 2.4rem);
     margin-bottom: 2.4rem;
   }
@@ -222,6 +234,12 @@
 
 /* ---------- 640px and below (mobile) ---------- */
 @media (max-width: 640px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
   /* Project bento → single column */
   .project-grid {
     grid-template-columns: 1fr;
@@ -288,6 +306,15 @@
 
   .building-strip-items {
     gap: 1rem 1.5rem;
+    width: 100%;
+  }
+
+  .building-item {
+    width: 100%;
+  }
+
+  .building-item-desc {
+    font-size: 0.8rem;
   }
 
   .footer-socials a {
@@ -298,12 +325,26 @@
   .footer-note {
     font-size: 0.75rem;
   }
+
+  .section-title {
+    max-width: 100%;
+  }
 }
 
 /* ---------- 480px and below (small mobile) ---------- */
 @media (max-width: 480px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
   .hero {
     padding: calc(var(--header-h) + 1rem) 0 3rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
   }
 
   .hero-title {
@@ -315,6 +356,7 @@
   .hero-sub {
     font-size: 0.98rem;
     margin-bottom: 1.6rem;
+    max-width: 100%;
   }
 
   .hero-cta {
@@ -330,6 +372,7 @@
 
   .section-title {
     font-size: clamp(1.45rem, 6vw, 1.85rem);
+    max-width: 100%;
   }
 
   .section-label {
@@ -338,6 +381,10 @@
 
   .about-grid {
     gap: 2rem;
+  }
+
+  .about-copy {
+    max-width: 100%;
   }
 
   .about-current {
@@ -416,6 +463,8 @@
 
   .nav-inner {
     gap: 0.5rem;
+    width: 100%;
+    padding: 0 1rem;
   }
 
   .brand-mark {
@@ -444,6 +493,19 @@
   .mobile-link {
     font-size: 1.3rem;
   }
+
+  .project-meta {
+    flex-wrap: wrap;
+    gap: 0.4rem 0.6rem;
+  }
+
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .nav-inner {
+    padding: 0 0.75rem;
+  }
 }
 
 /* ---------- Reduced-motion visual fallback for mobile hover ---------- */
@@ -453,9 +515,4 @@
   }
 
   /* Reveal project footer is always visible — no override needed */
-}
-
-  .project-card {
-    min-height: 0;
-  }
 }
