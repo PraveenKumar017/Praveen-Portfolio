@@ -4,13 +4,13 @@
 
 ### Senior Software Engineer · Frontend Specialist
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/praveenkumar-s)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/praveen-kumar-s-ab7aa9223)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/praveenkumar-s)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hello@praveenkumar.dev)
-[![Resume](https://img.shields.io/badge/Download_Resume-0B0E11?style=for-the-badge&logo=readdotcv&logoColor=white)](assets/Praveen_Kumar_Resume.pdf)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:praveenkumarsaravanan17@gmail.com)
+[![Resume](https://img.shields.io/badge/Download_Resume-0B0E11?style=for-the-badge&logo=readdotcv&logoColor=white)](assets/Praveen_Kumar_S_Resume.pdf)
 
 **Angular specialist with full-stack exposure — Go, Cassandra, REST APIs.**
-**2.5+ years shipping enterprise products.**
+**2.5+ years delivering enterprise products.**
 
 ![visitors](https://api.visitorbadge.io/api/visitors?path=praveenkumar-s.praveen-portfolio&label=Visitors&countColor=%235B8CFF)
 
@@ -20,7 +20,7 @@
 
 ## 👋 About Me
 
-> I'm a frontend specialist with backend exposure, focused on building interfaces that feel fast, behave predictably, and hold up under real enterprise load. My work sits at the intersection of **Angular, Go, and Cassandra** — shipping modules end-to-end rather than passing code over the wall.
+> I'm a frontend specialist with backend exposure, focused on building interfaces that feel fast, behave predictably, and hold up under real enterprise load. My work sits at the intersection of **Angular, Go, and Cassandra** — delivering modules end-to-end rather than passing code over the wall.
 
 ```js
 const developer = {
@@ -90,9 +90,9 @@ const developer = {
 
 **Let's build something great together.**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/praveenkumar-s)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/praveen-kumar-s-ab7aa9223)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/praveenkumar-s)
-[![Email](https://img.shields.io/badge/hello@praveenkumar.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hello@praveenkumar.dev)
+[![Email](https://img.shields.io/badge/praveenkumarsaravanan17@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:praveenkumarsaravanan17@gmail.com)
 
 © 2026 Praveen Kumar S. All rights reserved.
 

@@ -241,7 +241,7 @@ var spyActive = null;
 
     var subject = encodeURIComponent("Portfolio inquiry from " + name);
     var body = encodeURIComponent(message + "\n\n\u2014 " + name + " (" + email + ")");
-    window.location.href = "mailto:hello@praveenkumar.dev?subject=" + subject + "&body=" + body;
+    window.location.href = "mailto:praveenkumarsaravanan17@gmail.com?subject=" + subject + "&body=" + body;
 
     contactForm.reset();
   });
