@@ -238,12 +238,6 @@
     padding: 1.5rem;
   }
 
-  .project-hover {
-    transform: none;
-    margin: 1.2rem -1.5rem -1.5rem;
-    padding: 1rem;
-  }
-
   .education-item {
     grid-template-columns: 1fr;
   }
@@ -462,12 +456,8 @@
     display: none;
   }
 
-  /* Reveal project tags/links on touch devices */
-  .project-hover {
-    transform: none;
-    margin: 1.2rem -1.8rem -1.8rem;
-    padding: 1rem 1.2rem;
-  }
+  /* Reveal project footer is always visible — no override needed */
+}
 
   .project-card {
     min-height: 0;
