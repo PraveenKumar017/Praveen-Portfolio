@@ -237,13 +237,36 @@ var spyActive = null;
       return;
     }
 
-    setStatus("Thanks, " + name + "! Your message is ready — I'll get back to you soon.");
+    setStatus("Sending your message\u2026");
 
-    var subject = encodeURIComponent("Portfolio inquiry from " + name);
-    var body = encodeURIComponent(message + "\n\n\u2014 " + name + " (" + email + ")");
-    window.location.href = "mailto:praveenkumarsaravanan17@gmail.com?subject=" + subject + "&body=" + body;
+    var payload = new FormData(contactForm);
+    payload.set("_subject", "Portfolio contact from " + name);
 
-    contactForm.reset();
+    fetch(contactForm.action, {
+      method: contactForm.method.toUpperCase(),
+      body: payload
+    })
+      .then(function (res) {
+        return res.text();
+      })
+      .then(function (text) {
+        if (/verify your email/i.test(text)) {
+          setStatus(
+            "One step left — check your inbox and verify the email address on jabwn.com, then resend.",
+            true
+          );
+          return;
+        }
+        if (/sorry, there was an error/i.test(text)) {
+          setStatus("Something went wrong processing your message. Please try again.", true);
+          return;
+        }
+        setStatus("Thanks, " + name + "! Your message is on its way — I'll get back to you soon.");
+        contactForm.reset();
+      })
+      .catch(function () {
+        setStatus("Network error — please try again or email me directly.", true);
+      });
   });
 
   /* ---------- 9. Cursor glow (desktop only) ---------- */

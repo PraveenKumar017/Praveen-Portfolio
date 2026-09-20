@@ -29,7 +29,7 @@ const developer = {
   stack: ["Angular", "TypeScript", "Go", "Cassandra"],
   focus: ["Clean code", "Performance", "UX"],
   currently: "Endpoint security & RMM tooling at Algomox",
-  shipped: "2.5+ years",
+  delivered: "2.5+ years",
 };
 ```
 
@@ -72,7 +72,7 @@ const developer = {
 - [Health Monitoring App](https://www.figma.com/proto/eQJykQMUjVZNOhun51JvUA/Health-Monitor) — calm, scannable data-dense screens
 - [Blogging Platform](https://www.figma.com/proto/RCzXfu95LuZ8AY0x0z6PSq/Blog-Platform) — reader-first editorial layout
 
-### 📦 Other Shipped Work
+### 📦 Other Delivered Work
 - **Paybus Application** — Angular frontend for a bus booking / transit app
 - **Automatic On-Duty Generation Website** — HTML/CSS utility tool
 
