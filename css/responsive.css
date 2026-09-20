@@ -443,11 +443,6 @@
     font-size: 1.2rem;
   }
 
-  .building-strip {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .mobile-link {
     font-size: 1.45rem;
   }
