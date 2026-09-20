@@ -104,8 +104,11 @@
   var mobileLinksArr = Array.prototype.slice.call(mobileLinks);
 
   var linksById = {};
+  var sectionEls = [];
   navLinks.forEach(function (link) {
     var id = link.getAttribute("href").replace("#", "");
+    var section = document.getElementById(id);
+    if (section) sectionEls.push(section);
     linksById[id] = {
       nav: link,
       mobile: mobileLinksArr.find(function (l) {
