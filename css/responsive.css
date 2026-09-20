@@ -452,10 +452,6 @@
     display: none;
   }
 
-  .spotlight::before {
-    display: none;
-  }
-
   /* Reveal project footer is always visible — no override needed */
 }
 

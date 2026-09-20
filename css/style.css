@@ -169,17 +169,6 @@ h4:hover {
   border: 1px solid var(--border);
 }
 
-/* Spotlight card (cursor-follow glow) */
-.spotlight {
-  position: relative;
-}
-
-.spotlight::before,
-.spotlight:hover::before,
-.spotlight::after {
-  display: none;
-}
-
 /* Tag pills */
 .tag {
   display: inline-flex;
