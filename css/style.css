@@ -744,6 +744,11 @@ html[data-theme="light"] .hero-blob-2 {
   align-items: center;
 }
 
+.about-copy,
+.about-visual {
+  min-width: 0;
+}
+
 .about-copy p {
   color: var(--text-secondary);
   margin-bottom: 1.1rem;
