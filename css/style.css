@@ -1068,11 +1068,6 @@ html[data-theme="light"] .hero-blob-2 {
   margin-bottom: 1.4rem;
 }
 
-.project-group-count {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-}
-
 /* Badges */
 .project-badge {
   display: inline-flex;
@@ -1111,12 +1106,6 @@ html[data-theme="light"] .badge-live {
   color: var(--accent);
   border-color: var(--accent);
   background: var(--accent-soft, rgba(91, 140, 255, 0.12));
-}
-
-.badge-other {
-  font-family: var(--font-heading);
-  font-size: 0.72rem;
-  border-color: var(--border-strong);
 }
 
 .group-badge {
