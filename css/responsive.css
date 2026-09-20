@@ -35,16 +35,7 @@
 /* ---------- 1024px and below ---------- */
 @media (max-width: 1024px) {
   .education-item {
-    grid-template-columns: 1fr auto;
-    gap: 0.75rem 1.25rem;
-  }
-
-  .education-degree {
-    grid-column: 1;
-  }
-
-  .education-school {
-    grid-column: 1;
+    flex-wrap: wrap;
   }
 
   /* Bento grid: 12-col asymmetric → 2-col until mobile */
@@ -189,7 +180,7 @@
   }
 
   .education-item {
-    grid-template-columns: 1fr auto;
+    gap: 1rem 1.25rem;
   }
 
   .form-row {
@@ -257,7 +248,14 @@
   }
 
   .education-item {
-    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .education-extra {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .building-strip {
@@ -298,6 +296,13 @@
 
   .education-item {
     padding: 1.35rem 1.4rem;
+  }
+
+  .education-badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    font-size: 0.72rem;
   }
 
   .contact-channel {
