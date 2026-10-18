@@ -139,7 +139,7 @@ h4:hover {
 
 /* ---------- 3. Reusable ---------- */
 .section {
-  padding: clamp(4.5rem, 10vw, 8.5rem) 0;
+  padding: clamp(1.25rem, 3.5vw, 3rem) 0 clamp(4rem, 8vw, 7rem);
   position: relative;
 }
 
@@ -592,7 +592,7 @@ body.menu-open {
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding: calc(var(--header-h) + 2rem) 0 4rem;
+  padding: calc(var(--header-h) + 2rem) 0 3rem;
 }
 
 .hero-bg {
@@ -711,34 +711,6 @@ html[data-theme="light"] .hero-blob-2 {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-}
-
-.hero-scroll {
-  position: absolute;
-  bottom: 1.6rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 26px;
-  height: 46px;
-  border: 2px solid var(--border-strong);
-  border-radius: 999px;
-  display: flex;
-  justify-content: center;
-  padding-top: 8px;
-}
-
-.hero-scroll-dot {
-  width: 4px;
-  height: 9px;
-  border-radius: 4px;
-  background: var(--accent);
-  animation: scroll-drop 1.8s ease-in-out infinite;
-}
-
-@keyframes scroll-drop {
-  0% { transform: translateY(0); opacity: 1; }
-  70% { transform: translateY(14px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 0; }
 }
 
 /* ---------- 6. About ---------- */
