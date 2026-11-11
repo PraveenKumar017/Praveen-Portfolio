@@ -63,8 +63,8 @@ const developer = {
 ### 🌐 Live Websites
 | Project | Type | Stack |
 |---------|------|-------|
-| [GoldenMercury Scripts](https://goldenmercuryscripts.com/) | Freelance business site | HTML / CSS / JS |
-| [Huwithin](https://huwithin.netlify.app/) | Interactive freelance site | HTML / CSS / JS |
+| [GoldenMercury Scripts](https://goldenmercuryscripts.com/) | Business site | HTML / CSS / JS |
+| [Huwithin](https://huwithin.netlify.app/) | Wellness site | HTML / CSS / JS |
 | [Sivakasi666 Crackers](https://www.sivakasi666crackers.com/about) | E-commerce | HTML / CSS / JS |
 
 ### 🎨 Design / Case Studies (Figma)
